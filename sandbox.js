@@ -112,4 +112,35 @@ let jointhem = ninjas.concat(["mamma", "pappa"]);
 let addin = ninjas.push( "mamma");
 let popping = ninjas.pop();
 
+// ---------------------- Null and undefined -----------------
+
+let numb = null;
+
+//Null = 0 in numbers, "null" in string
+
+//-------------------Boolean and Comparisons-----------------------
+
+console.log(true, false, "true", "false");
+
+//methods can return booleans
+
+let check = email.includes ("@");
+console.log(check);
+
+let preview = ninjas.includes("Loki");
+console.log(preview);
+
+//Comparison operators
+let age = 30;
+console.log(age == 25);
+console.log(age != 30);
+console.log(age > 24);
+console.log(age < 25);
+console.log(age <= 30);
+
+console.log(firstName == "Hanna");
+console.log(firstName > "Mohammad");
+
+//----------------------------
+
 
