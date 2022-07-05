@@ -42,3 +42,74 @@ console.log(change);
 
 // -------------------------------------------------------------------------------------------Numbers
 
+let radius = 10;
+const pi = 3.14;
+
+console.log(radius, pi);
+// ** betyder upphöjt let calc = pi * radius**2;
+//console.log(calc);
+
+//order of operations: B I D M A S (B - brackets, I - square, D-division,  M - multiplication, A - addition, S - subtraction)
+
+/*let likes = 10
+likes++;
+likes--;
+likes += 10;
+likes -= 5;
+likes *= 2;
+likes /= 2;
+console.log(likes); */
+
+//NaN = Not a number
+
+let together = "the blog has " + radius + " likes!"
+console.log(together);
+
+// ---------------------------------- Template string-----------------------------------
+
+const title = "Best reads of 2019"
+const author = "Mario"
+const likes = 30;
+
+//Concatenation way 
+
+let book = "The book called " + title + " by " + author + " has " + likes + " likes."
+console.log(book);
+
+//Template string way
+
+let tempbook = `The log called ${title} by ${author} has ${likes} likes.`
+ console.log(tempbook);
+
+//Creating html templates
+
+let html = `
+<h2>${title}</h2>
+<p>${author}</p>
+<span>This blog has ${likes} likes. </span>
+`;
+
+console.log(html);
+
+// ------------------------------------- ARRAYS-----------------------
+
+let ninjas = ["Hanna", "Mohammad", "Valle", "Loki"];
+
+ninjas[3] = "LOKLOK";
+
+console.log(ninjas[1]);
+
+console.log(ninjas.length); 
+
+
+//let ages [20, 25, 30, 35];
+
+
+
+let togetherino = ninjas.join (",");
+let position = ninjas.indexOf("Valle");
+let jointhem = ninjas.concat(["mamma", "pappa"]);
+let addin = ninjas.push( "mamma");
+let popping = ninjas.pop();
+
+
