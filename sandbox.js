@@ -141,6 +141,16 @@ console.log(age <= 30);
 console.log(firstName == "Hanna");
 console.log(firstName > "Mohammad");
 
-//----------------------------
+//---------------------------- Loose vs Strict ----------------
+
+//Loose comparison
+console.log(age == "30");
+console.log(age != "30");
+
+//strict comparison, different types cannot be equal
+
+console.log(age === 25);
+console.log(age!==25);
+console.log(age === "30");
 
 
