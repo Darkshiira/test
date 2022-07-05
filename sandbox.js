@@ -153,4 +153,25 @@ console.log(age === 25);
 console.log(age!==25);
 console.log(age === "30");
 
+// ------------------- Type conversion ------------------------
+
+let score = "100";
+score = Number(score);
+console.log(score + 1);
+console.log(typeof score);
+
+let makeastring = String(score);
+console.log(typeof makeastring);
+
+let blabla = Boolean(100);
+console.log(blabla);
+
+//Boolean, even numbers are true, odd numbers are false
+
+
+// --------------------------------------------------------   CHAPTER 2 JAVASCRIPT BASIC --------------------------------------
+
+//-------------------Controlflow basics ----------------------
+
+
 
