@@ -174,4 +174,11 @@ console.log(blabla);
 //-------------------Controlflow basics ----------------------
 
 
+//loops
+
+for(let i = 0; i < 5; i++){
+
+}
+
+//conditional statements
 
