@@ -250,3 +250,67 @@ else {
     console.log("Password is not long enough");
 }
 
+// logical NOT (!)
+let user = false;
+//user not log in
+if(!user){
+console.log("You must be logged in to continue");
+}
+
+console.log(!true);
+console.log(!false);
+
+// break and continue
+
+const scor = [50, 25, 0, 30, 100, 20, 10];
+
+for(let i = 0; i < scor.length; i++){
+    
+ if(scor[i] === 0)
+{
+
+ continue;}
+
+ console.log("Your score ", scor[i]);
+
+ if (scor[i] === 100){ 
+        console.log("Congrats, you got max score")
+        break;
+    }
+}
+
+const grade = "P";
+
+switch(grade){
+    case "A":
+        console.log("You got an A");
+        break; 
+    case "B":
+        console.log("You got an B");
+        break;
+
+    case "C":
+        console.log("You got an C");
+        break;
+
+    case "D":
+        console.log("You got an D");
+        break;
+
+    case "E":
+        console.log("You got an E");
+         break;
+
+    default:
+        console.log("not a valid grade");
+
+}
+// Variables and block scopes
+if(true){
+    let year = 2023;
+    console.log("it is now :", year);
+if(true){
+    let year = 2024;
+ console.log(year);
+}}
+console.log(year);
