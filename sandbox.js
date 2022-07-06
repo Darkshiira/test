@@ -173,12 +173,30 @@ console.log(blabla);
 
 //-------------------Controlflow basics ----------------------
 
+// --------------- Loops----------------
 
-//loops
+//forloops
 
 for(let i = 0; i < 5; i++){
+console.log("in loop ", i)
+}
+console.log("loop finished");
 
+const listing= ["shaun", "mario", "luigi"];
+
+for (let i = 0; i < listing.length; i++){
+    let htmlagain = `<div>${listing[i]}</div>`;
+    console.log(htmlagain);
+}
+
+//Whileloop
+let x = 0;
+while(x < 5){
+    console.log("in loop ", i);
+    i++;
 }
 
 //conditional statements
+
+
 
