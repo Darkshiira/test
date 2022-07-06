@@ -192,11 +192,61 @@ for (let i = 0; i < listing.length; i++){
 //Whileloop
 let x = 0;
 while(x < 5){
-    console.log("in loop ", i);
-    i++;
+    console.log("in loop ", x);
+    x++;
 }
 
-//conditional statements
+while(x < listing.length){
+    console.log(listing[x]);
+    x++;
+}
 
+//do while loop
 
+do {
+console.log("in loop ", x);
+x++;}
+while(x < 5);
+
+//----------------conditional statements--------------
+
+//if statement
+
+const year = 2022;
+
+if(year > 2022){
+    console.log("you are in year 2022");
+}
+
+if(ninjas.length > 3)
+{console.log("Thats alot of ninjas");
+}
+
+const password = "password";
+
+if(password.length >= 12){
+    console.log("That password is mighty strong");
+}
+
+else if(password.length >=8){
+    console.log("That password is long enough");
+}
+
+else {
+    console.log("Password is not long enough");
+}
+
+//logical operators or || and &&
+
+if(password.length >= 12 || password.includes("@")){
+    console.log("That password is mighty strong");
+}
+
+else if(password.length >=8){
+    console.log("That password is long enough");
+}
+
+else {
+    console.log("Password is not long enough");
+}
 
