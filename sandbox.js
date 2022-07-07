@@ -323,11 +323,14 @@ console.log("hello there");
 }
 
 //function expression - with semicolons (a function stored inside a variable) - is not hoisted
-const speak = function(){
-console.log("Good day");
+// A better way to code?
+const speak = function(name){
+console.log(`Good day ${name}`);
 };
 
 
 greet();
-speak();
+speak("Hanna");
+
+
 
