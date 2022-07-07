@@ -317,3 +317,17 @@ console.log(year);
 
 
 // --------------------------------------------------------   CHAPTER 4 Functions and methods --------------------------------------
+//function declaration - is hoisted = can be defined anywhere on the site.
+function greet(){
+console.log("hello there");
+}
+
+//function expression - with semicolons (a function stored inside a variable) - is not hoisted
+const speak = function(){
+console.log("Good day");
+};
+
+
+greet();
+speak();
+
