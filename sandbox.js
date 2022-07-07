@@ -324,13 +324,34 @@ console.log("hello there");
 
 //function expression - with semicolons (a function stored inside a variable) - is not hoisted
 // A better way to code?
-const speak = function(name){
-console.log(`Good day ${name}`);
+const speak = function(name = "luigi", time = "night"){
+console.log(`Good ${time} ${name}`);
 };
 
 
 greet();
-speak("Hanna");
+speak("Hanna", "morning");
 
+// ------ Returning a value
+
+const calcArea = function(radius){
+    return area = 3.14 * radius**2;
+    
+};
+
+const a = calcArea(5);
+console.log(a);
+
+const calcVol = function(area){
+    
+};
+
+
+// ----------------- Arrowfunction-------- with one peremiter doesnt need ()
+
+const calAr = (radius) => 3.14 * radius**2;
+}
+calAr(5);
+console.log(areal);
 
 
