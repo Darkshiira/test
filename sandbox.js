@@ -350,8 +350,54 @@ const calcVol = function(area){
 // ----------------- Arrowfunction-------- with one peremiter doesnt need ()
 
 const calAr = (radius) => 3.14 * radius**2;
-}
-calAr(5);
-console.log(areal);
 
+calAr(5);
+console.log(area);
+
+const great = () => "Hello, world";
+
+great();
+console.log(great());
+
+/*const bill = function(products, tax){
+    let total = 0;
+    for (let i = 0; i < products.length, i++)(
+        total += products[i] + products[i]*tax;)
+        return total;
+    )
+
+}
+*/
+const bill = (products, tax) => {
+    let total = 0;
+    for(let i = 0; i < products.length; i++){
+        total += products[i] + products[i]*tax;
+    }
+return total;
+}
+
+    console.log(bill([10,15,30], 0.2));
+
+// -------------- functions vs methods ------------ 
+
+    // function
+
+const hellow = () => "Hellow";
+
+let resultOne = hellow();
+console.log(resultOne);
+
+    //methods - essentially functions that you call to do something
+
+    let resultTwo = fullName.toUpperCase();
+
+    console.log(resultTwo);
+
+// --------------------------- FORBACK FUNCTIONS ------------
+    // -------------------------- Scrolls through each name --------------
+
+const logPerson = (person, index) => 
+{console.log(`${index} - hellow ${person} `)}
+
+ninjas.forEach(logPerson);
 
