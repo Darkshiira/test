@@ -314,3 +314,6 @@ if(true){
  console.log(year);
 }}
 console.log(year);
+
+
+// --------------------------------------------------------   CHAPTER 4 Functions and methods --------------------------------------
