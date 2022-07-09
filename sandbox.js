@@ -1,3 +1,4 @@
+
 //alert('hello world');
 console.log(1);
 //this is a comment
@@ -83,13 +84,13 @@ let tempbook = `The log called ${title} by ${author} has ${likes} likes.`
 
 //Creating html templates
 
-let html = `
+let html2 = `
 <h2>${title}</h2>
 <p>${author}</p>
 <span>This blog has ${likes} likes. </span>
 `;
 
-console.log(html);
+console.log(html2);
 
 // ------------------------------------- ARRAYS-----------------------
 
@@ -401,3 +402,16 @@ const logPerson = (person, index) =>
 
 ninjas.forEach(logPerson);
 
+
+const ul = document.querySelector(".people");
+
+const people = ["Mario", "Luigi", "Ryu", "Mo", "Chun-li"];
+
+let html= ``;
+
+ninjas.forEach((person) => {
+    html += `<li style= "color: purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
