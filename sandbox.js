@@ -394,18 +394,19 @@ console.log(resultOne);
 
     console.log(resultTwo);
 
-// --------------------------- FORBACK FUNCTIONS ------------
+// --------------------------- CALLBACK FUNCTIONS ------------
+// Passes in another function as an argument
     // -------------------------- Scrolls through each name --------------
 
-const logPerson = (person, index) => 
-{console.log(`${index} - hellow ${person} `)}
+
+
+const logPerson = (ninja, index) => 
+{console.log(`${index} - hellow ${ninja} `)}
 
 ninjas.forEach(logPerson);
 
 
 const ul = document.querySelector(".people");
-
-const people = ["Mario", "Luigi", "Ryu", "Mo", "Chun-li"];
 
 let html= ``;
 
@@ -415,3 +416,57 @@ ninjas.forEach((person) => {
 
 console.log(html);
 ul.innerHTML = html;
+
+//------------------------------------------------------CHAPTER 5 - OBJECT LITERALS------------------------------
+//Objects have properties(email, username, gender) and things they can do(methods; ex login logout)
+//or properties in blog: title, content, author, and things it can do: publish, unpublish, delete.
+
+//Defining properties:
+let useri = {
+    name:"crystal",
+    age: 30,
+    email: "crystal@thenetninja.co.uk",
+    location: "berlin",
+    blogs: ["Why mac & cheese rules", "20 things to do with marmite"],
+    login: function(){
+        console.log("the user is logged in");
+    },
+    logout: function(){
+        console.log("the user log out");
+    },
+    logBlogs: function(){
+        console.log("This user has written: ");
+        this.blogs.forEach(blog => {
+            console.log(blog);
+
+        })
+    }
+};
+
+console.log(useri.name);
+//anotherway of doing it:
+console.log(useri["name"]);
+
+//changing the properties:
+useri.age = 35;
+useri["name"] = "Mario";
+console.log(useri.age);
+console.log(useri.name);
+
+console.log(typeof useri);
+
+
+//---------------- Adding Methods------
+
+useri.login();
+useri.logout();
+
+//------------------------------This-------------------------
+
+//it is a context object (Works within the block)
+//This cannot be used with arrowfunctions
+
+console.log(this);
+useri.logBlogs();
+
+
